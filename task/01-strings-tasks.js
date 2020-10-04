@@ -20,7 +20,7 @@
  *   '',  'bb'  => 'bb'
  */
 function concatenateStrings(value1, value2) {
-  throw new Error('Not implemented');
+  return value1.concat(value2);
 }
 
 /**
@@ -35,7 +35,7 @@ function concatenateStrings(value1, value2) {
  *   ''      => 0
  */
 function getStringLength(value) {
-  throw new Error('Not implemented');
+  return value.length;
 }
 
 /**
@@ -52,7 +52,7 @@ function getStringLength(value) {
  *   'Chuck','Norris'  => 'Hello, Chuck Norris!'
  */
 function getStringFromTemplate(firstName, lastName) {
-  throw new Error('Not implemented');
+  return `Hello, ${firstName} ${lastName}!`;
 }
 
 /**
@@ -66,7 +66,7 @@ function getStringFromTemplate(firstName, lastName) {
  *   'Hello, Chuck Norris!' => 'Chuck Norris'
  */
 function  extractNameFromTemplate(value) {
-  throw new Error('Not implemented');
+  return value.slice(7, -1);
 }
 
 
@@ -177,7 +177,7 @@ function extractEmails(str) {
 
 /**
  * Returns the string representation of rectangle with specified width and height
- * using pseudograhic chars
+ * using 'Box-drawing characters'
  *
  * @param {number} width
  * @param {number} height
@@ -215,7 +215,7 @@ function getRectangleString(width, height) {
  *   'hello' => 'uryyb'
  *   'Why did the chicken cross the road?' => 'Jul qvq gur puvpxra pebff gur ebnq?'
  *   'Gb trg gb gur bgure fvqr!' => 'To get to the other side!'
- *   'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz' => 
+ *   'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz' =>
  *          'NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm'
  *
  */

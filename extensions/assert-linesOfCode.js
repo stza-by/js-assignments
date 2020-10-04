@@ -1,4 +1,4 @@
-const assert = require('assert');
+const assert = require('assert').strict;
 
 function linesOfCode(fn, expected, recommended) {
   const actualLinesOfCode = fn.toString().split('\n').filter(s => s.trim()).length - 2;
